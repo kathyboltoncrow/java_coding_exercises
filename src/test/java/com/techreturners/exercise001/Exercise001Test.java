@@ -16,6 +16,7 @@ public class Exercise001Test {
         assertEquals("Oh no, bears!!!", ex001.capitalizeWord("oh no, bears!!!"));
     }
 
+
     @Test
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
@@ -29,6 +30,7 @@ public class Exercise001Test {
         assertEquals("K.M", ex001.generateInitials("Karl", "Marx"));
         assertEquals("L.H", ex001.generateInitials("Lewis", "Hamilton"));
     }
+
 
     @Test
     public void checkAddVat() {
