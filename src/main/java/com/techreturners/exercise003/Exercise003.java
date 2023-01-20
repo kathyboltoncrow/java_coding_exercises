@@ -16,14 +16,16 @@ public class Exercise003 {
         fMap.put("Mint Chocolate Chip", 3);
         fMap.put("Chocolate", 4);
         fMap.put("Mango Sorbet", 5);
-        System.out.println("Initial Mappings are: " + fMap);
     }
 
     int getIceCreamCode(String iceCreamFlavour) {
+        Integer code = fMap.get(iceCreamFlavour);
 
-        int value = fMap.get(iceCreamFlavour);
+        int value = -1;
+        if(code != null){
+            value = code.intValue();
+        }
         return value;
-
     }
 
     String[] iceCreamFlavours() {

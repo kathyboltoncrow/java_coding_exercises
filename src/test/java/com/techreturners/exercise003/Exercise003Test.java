@@ -1,7 +1,6 @@
 package com.techreturners.exercise003;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -24,7 +23,6 @@ public class Exercise003Test {
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    @Disabled("You can remove this @Disabled annotation to run the test")
     @Test
     public void checkGetIceCreamCodeForMangoSorbet() {
         String iceCreamFlavour = "Mango Sorbet";
@@ -42,12 +40,20 @@ public class Exercise003Test {
     }
 
     @Test
+    public void checkGetIceCreamCodeForSaltedCaramel() {
+        String iceCreamFlavour = "Salted Caramel";
+        int expected = -1;
+
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
     public void checkPickMultipleIceCreamFlavours() {
 
         String[] expected = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
 
         assertArrayEquals(expected, ex003.iceCreamFlavours());
     }
-
 
 }
