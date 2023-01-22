@@ -6,12 +6,13 @@ public class Exercise002 {
         if (person == null){
             return false;
         }
-
+        return person.getCity().equals(MANCHESTER);
+        /*
         if (person.getCity().equals(MANCHESTER)){
             return true;
         }else{
             return false;
-        }
+        }*/
     }
 
     public boolean canWatchFilm(Person person, int ageLimit) {
@@ -19,10 +20,12 @@ public class Exercise002 {
             return false;
         }
 
-        if (person.getAge() >= ageLimit){
+        return person.getAge() >= ageLimit;
+       /*
+       if (person.getAge() >= ageLimit){
             return true;
         }else{
             return false;
-        }
+        }*/
     }
 }
