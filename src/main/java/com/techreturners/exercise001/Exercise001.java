@@ -41,15 +41,6 @@ public class Exercise001 {
                 .filter(e -> e.getType().equals("Linux"))
                 .count();
 
-        /*
-        int count = 0;
-        for(int i = 0; i < users.size(); i++){
-            String type = users.get(i).getType();
-            if (type.equals("Linux")) {
-                count ++;
-            }
-        }*/
-
         return count;
     }
 }
